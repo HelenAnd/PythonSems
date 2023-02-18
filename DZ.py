@@ -34,10 +34,10 @@
 # 385916 -> yes
 # 123456 -> no
 
-n = int(input())
-s1 = n[0] + n[1] + n[2]
-s2 = n[3] + n[4] + n[5]
+n = str(input())
+s1 = int(n[0]) + int(n[1]) + int(n[2])
+s2 = int(n[3]) + int(n[4]) + int(n[5])
 if s1 == s2:
-  print("YES")
+    print('Счастливый')
 else:
-  print("NO")
+    print('Обычный')
