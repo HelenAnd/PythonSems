@@ -18,3 +18,11 @@ print("Результат возведения в степень равен:", p
 # *Пример:*
 # 2 2
 #     4 
+
+def recsum(a, b):
+    return recsum(a+1, b-1) if b > 0 else recsum(a-1, b+1) if b < 0 else a
+ 
+ 
+a = int(input("A = "))
+b = int(input("B = "))
+print(f"A + B = {recsum(a, b)}")
