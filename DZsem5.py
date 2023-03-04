@@ -63,6 +63,26 @@ print(res)
 # the
 # Highland
 
+# Попробовала в ручную, с помощью цикла. Крутила-вертела, но что-то не вышло. 
+str1 = str(input())
+i = 0
+k = 0
+list = []
+
+def space(str1):
+    while k <= len(str1):
+        if str1(i) != " ":
+            list.append(str(i))
+            return(list)
+        i += 1
+        k += 1
+        return(str1)
+
+min_list = space(str1)
+print(min_list)
+
+# С split получилось
+
 single_line = input()
 words_in_lines = '\n'.join(single_line.split())
 words_in_lines = single_line.replace(' ', '\n')
