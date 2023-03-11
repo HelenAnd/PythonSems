@@ -5,20 +5,20 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 # **Вывод:** Парам пам-пам  
 
-# song = input()
-# volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
-# parts = song.split()
-# itog = list()
-# for item in parts:
-#     k = 0
-#     for letter in item:
-#         if letter in volwes:
-#             k += 1
-#     itog.append(k)
-# if len(set(itog)) == 1:
-#     print('Парам пам-пам')
-# else:
-#     print('Пам парам')
+song = input()
+volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+parts = song.split()
+itog = list()
+for item in parts:
+    k = 0
+    for letter in item:
+        if letter in volwes:
+            k += 1
+    itog.append(k)
+if len(set(itog)) == 1:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
 
 # Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), которая принимает в качестве аргумента функцию, вычисляющую элемент по номеру строки и столбца. 
 # Аргументы num_rows и num_columns указывают число строк и столбцов таблицы, которые должны быть распечатаны. 
